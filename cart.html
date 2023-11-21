@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommerce project for making Farhad express">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar starts -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="log-in.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="/index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img class="profile-icon" src="images/Forhad.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brands">Farhad Express</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart 2 Products $124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav bar ends -->
+    <main>
+        <div class="cart flex-center">
+            <div class="cart-items">
+                <div class="cart__items-heading card">
+                    <h2>Shopping cart [2 item]</h2>
+                    <div class="cart__items-action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                        </label>
+                        <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn">Shope more</button>
+                    </div>
+                </div>
+                <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="images/product1.jpg" alt="Product 1" class="cart__item-img">
+                    <div class="cart__item-description">
+                        <h3 class="cart__product-name">Sony v-4 Headphone</h3>
+                        <h4 class="cart__product-price">Price: $225.99</h4>
+                        <p class="cart__product-shipping">Free shipping</p>
+                    </div>
+                        <div class="cart__product-action">
+                            <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                           <div>
+                            <button class="btn"><i class="fas fa-add"></i></button>
+                            <span>3</span>
+                            <button class="btn"><i class="fas fa-minus"></i></button>
+                           </div>
+                        </div>
+                </div>
+                <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="images/product3.jpg" alt="Product 3" class="cart__item-img">
+                    <div class="cart__item-description">
+                        <h3 class="cart__product-name">Black Sunglass</h3>
+                        <h4 class="cart__product-price">Price: $140.50</h4>
+                        <p class="cart__product-shipping">Shipping cost $2.50</p>
+                    </div>
+                        <div class="cart__product-action">
+                            <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                           <div>
+                            <button class="btn"><i class="fas fa-add"></i></button>
+                            <span>1</span>
+                            <button class="btn"><i class="fas fa-minus"></i></button>
+                           </div>
+                        </div>
+                </div>
+            </div>
+            <div class="cart-payments flex-space-around">
+                <div class="cart__payment-summary card">
+                    <h2>Payment Summary</h2>
+                    <div>
+                        <p>Subtotal:</p>
+                        <p>$341.44</p>
+                    </div>
+                    <div>
+                        <p>Shipping Cost:</p>
+                        <p>$2.50</p>
+                    </div>
+                    <div>
+                        <p>Total:</p>
+                        <p>$344.38</p>
+                    </div>
+                    <button class="btn cart__payment-btn">Pay Now</button>
+                </div>
+                <div class="cart__payment-methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer starts -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe To Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder=" Your Email Address">
+            <button class="btn subscribe-btn">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Farhad Express. All Right Reseverd</p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="index.js"></script>
+</body>
+</html>

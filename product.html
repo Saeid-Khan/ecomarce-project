@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommerce project for making Farhad express">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar starts -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="log-in.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="/index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img class="profile-icon" src="images/Forhad.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brands">Farhad Express</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart 2 Products $124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav bar ends -->
+    <main class="flex-center">
+       <div class="main-content">
+        <section class="product-deatiles flex-center">
+            <div class="product__deatiles-left ">
+                <img src="images/product1.jpg" alt="product1">
+            </div>
+            <div class="product__deatiles-right">
+                <h3 class="product__name">Sony V-4 Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product__description">
+                            <strong>Description:</strong>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi illum quasi, tenetur quod voluptatem accusantium molestias temporibus, numquam aliquam nam molestiae non modi ex optio?
+                        </p>
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, doloribus non fugiat maxime animi modi libero commodi enim veritatis illo corporis velit, minima ducimus porro delectus omnis! Magnam dolores voluptatum, repudiandae aliquid a voluptas quasi.
+                        </p>
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi enim nemo quia, ad fugiat accusantium! Praesentium at quam aut sed?
+                        </p>
+                        <h4 class="product__category">Category: Headphone</h4>
+                        <h4 class="product__price">Price: $225.99</h4>
+                        <p class="product__rating">Product Rating: 4.5/5</p>
+                        <button class="btn product__btn">Add To Cart</button>
+                        <button class="btn product__btn">Back To Shopping</button>
+            </div>
+        </section>
+       </div>
+    </main>
+    <!-- footer starts -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe To Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder=" Your Email Address">
+            <button class="btn subscribe-btn">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Farhad Express. All Right Reseverd</p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="index.js"></script>
+</body>
+</html>

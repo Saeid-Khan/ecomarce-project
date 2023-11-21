@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommerce project for making Farhad express">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar starts -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="log-in.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="/index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img class="profile-icon" src="images/Forhad.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brands">Farhad Express</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart 2 Products $124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav bar ends -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="contact-container flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="form-control flex-center">
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                    </div>
+                </form>
+                <div class="contact-address flex-space-around">
+                    <address>
+                        <h4>Address:</h4>
+                        <p>120 high street</p>
+                        <p>chandpur,Bangladesh</p>
+                        <br>
+                        <span>Call:</span>
+                        <a href="tel:+0123456789">+0123456789</a>
+                    </address>
+                    <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29332.663557416254!2d90.66084095000001!3d23.22186485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754fcef10574867%3A0x98bef50733e9a1b3!2z4Kaa4Ka-4KaB4Kam4Kaq4KeB4Kaw!5e0!3m2!1sbn!2sbd!4v1700579503687!5m2!1sbn!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer starts -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe To Newsletter: </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder=" Your Email Address">
+            <button class="btn subscribe-btn">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2023 Farhad Express. All Right Reseverd</p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="index.js"></script>
+</body>
+</html>
